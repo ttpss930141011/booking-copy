@@ -1,22 +1,91 @@
-.header{
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
-    .headerContainer{
-        color: white;
-        width: 100%;
-        max-width: 1024px;
-        // background-color: rgb(104, 104, 248);
-        margin: 20px 0px 100px 0px;
-        .headerTitle {
-            font-size: 45px;
-        }
-        .headerDes{
-            margin-top: 10px ;
-        }
-        .headerSearchBar {
-           
-        }
+.header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+  .headerContainer {
+    color: white;
+    width: 100%;
+    max-width: 1024px;
+    // background-color: rgb(104, 104, 248);
+    margin: 20px 0px 100px 0px;
+    .headerTitle {
+      font-size: 45px;
     }
+    .headerDes {
+      margin-top: 10px;
+    }
+    .headerSearchBar {
+      position: absolute;
+      bottom: -30px;
+      display: flex;
+      height: 60px;
+      width: 95%;
+      max-width: 1024px;
+      align-items: center;
+      background-color: #ffb700;
+      border: none;
+      border-radius: 5px;
+      svg {
+        color: lightgray; //特別注意這邊fontawsome是svg檔
+        font-size: 24px; //所以可以在這邊控制全部icon屬性
+        margin-left: 10px;
+      }
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        text-overflow: ellipsis;
+      }
+      input::placeholder {
+        color: black;
+      }
+      input:focus::placeholder {
+        color: gray;
+      }
+
+      .SearchBarItem:first-child {
+        width: calc(34% - 20px);
+      }
+      .SearchBarItem:first-child :focus {
+        outline: 2px solid darkblue;
+        border-radius: 2px;
+        height: 30px;
+        margin-right: 10px;
+      }
+      .SearchBarItem {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        margin-left: 5px;
+        width: 320px;
+        gap: 10px;
+        color: black;
+        background-color: #fff;
+        border-radius: 2px;
+        cursor: pointer;
+        .calendar {
+          position: absolute;
+          top: 60px;
+          border: 1px lightgray solid;
+          box-shadow: 0px 0px 15px lightgray;
+        }
+      }
+      .SearchBarBtn {
+        border: none;
+        margin: 0px 5px 0px 5px;
+        width: 110px;
+        font-size: 18px;
+        padding: 0px 10px 0px 10px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: var(--primary-color);
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
 }
