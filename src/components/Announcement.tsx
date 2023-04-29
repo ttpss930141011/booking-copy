@@ -18,7 +18,8 @@ const Announcement = () => {
           </div>
           <div className="right">
             <h5>Coronavirus (COVID-19) support</h5>
-            Get the advice you need.Check thelatest COVID-19 restrictions before you travel.
+            Get the advice you need.Check thelatest COVID-19 restrictions before
+            you travel.
             <a href="#">Learn more</a>
           </div>
         </div>
@@ -31,12 +32,14 @@ const Announcement = () => {
             />
           </div>
           <div className="right">
-            <h2>省 15% 或更多</h2>
+            <h2>Save 15% or more!</h2>
             <span>
-              這個夏天，讓夢想之旅成真！2022 年 9 月 30
-              日前預訂並住房就可省一筆，還有跟著參賽完成第一個動態網站為自己開創新事業
+              Make your dream trip come true this summer! Book and stay before
+              September 30, 2022, to save big. Plus, join the competition to
+              create your first dynamic website and pave the way for a new
+              business venture.
             </span>
-            <button>逛逛優惠</button>
+            <button>Explore!</button>
           </div>
         </div>
       </div>
