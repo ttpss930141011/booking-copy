@@ -19,7 +19,21 @@ const Header = () => {
       key: "selection",
     },
   ]);
+  const [openConditions, setOpenConditions] = useState(false);
+  const [conditions, setConditions] = useState({
+    adults: 1,
+    children: 0,
+    rooms: 1,
+  });
 
+  const handleCounter = (
+    type: "adults" | "children" | "rooms",
+    value: number
+  ) => {
+    setConditions({ ...conditions, [type]: conditions[type] + value });
+  };
+  const [destination, setDestination] = useState("");
+  
   return (
     <div className="header">
       <div className="headerContainer">
@@ -36,6 +50,8 @@ const Header = () => {
               type="Search"
               placeholder="Where are you going?"
               className="SearchInput"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
             />
           </div>
           <div className="SearchBarItem">
@@ -62,8 +78,80 @@ const Header = () => {
             )}
           </div>
           <div className="SearchBarItem">
-            <FontAwesomeIcon icon={faPeopleGroup} />
-            <span className="SearchText">2 adults · 0 children · 1 room</span>
+            <FontAwesomeIcon
+              icon={faPeopleGroup}
+              onClick={() => setOpenConditions(!openConditions)}
+            />
+            <span
+              className="SearchText"
+              onClick={() => setOpenConditions(!openConditions)}
+            >
+              2 adults · 0 children · 1 room
+            </span>
+            {openConditions && (
+              <div className="ConditionsContainer">
+                <div className="condition">
+                  Adults
+                  <div className="conditionCounter">
+                    <button
+                      className="conditionCounterButton"
+                      onClick={() => handleCounter("adults", -1)}
+                      disabled={conditions.adults <= 1}
+                    >
+                      -
+                    </button>
+                    <span className="number">{conditions.adults}</span>
+                    <button
+                      className="conditionCounterButton"
+                      onClick={() => handleCounter("adults", 1)}
+                      disabled={conditions.adults >= 15}
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div className="condition">
+                  Children
+                  <div className="conditionCounter">
+                    <button
+                      className="conditionCounterButton"
+                      onClick={() => handleCounter("children", -1)}
+                      disabled={conditions.children <= 0}
+                    >
+                      -
+                    </button>
+                    <span className="number">{conditions.children}</span>
+                    <button
+                      className="conditionCounterButton"
+                      onClick={() => handleCounter("children", 1)}
+                      disabled={conditions.children >= 5}
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div className="condition">
+                  Rooms
+                  <div className="conditionCounter">
+                    <button
+                      className="conditionCounterButton"
+                      onClick={() => handleCounter("rooms", -1)}
+                      disabled={conditions.rooms <= 1}
+                    >
+                      -
+                    </button>
+                    <span className="number">{conditions.rooms}</span>
+                    <button
+                      className="conditionCounterButton"
+                      onClick={() => handleCounter("rooms", 1)}
+                      disabled={conditions.rooms >= 5}
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <button className="SearchBarBtn">Search</button>
         </div>

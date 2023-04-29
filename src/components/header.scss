@@ -72,6 +72,54 @@
           border: 1px lightgray solid;
           box-shadow: 0px 0px 15px lightgray;
         }
+        .SearchText {
+          width: 100%;
+        }
+        .ConditionsContainer {
+          position: absolute;
+          top: 60px;
+          right: 0px;
+          width: auto;
+          background-color: white;
+          box-shadow: 0px 0px 15px lightgray;
+          border-radius: 5px;
+          padding: 10px 40px;
+          cursor: default;
+
+          .condition {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 400px;
+            height: 60px;
+            .conditionCounter {
+              display: flex;
+              width: 100px;
+              border: 1px solid darkgreen;
+              padding: 5px;
+              border-radius: 5px;
+              justify-content: space-between;
+              align-items: center;
+              .conditionCounterButton {
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+                border-radius: 2px;
+                color : var(--primary-color);
+                background-color: white;
+                border: 1px solid white;
+                cursor: pointer;
+                &:hover {
+                  background-color: rgba(53, 164, 127, 0.1);
+                }
+                &:disabled {
+                  color: lightgray;
+                  cursor: not-allowed;
+                }
+              }
+            }
+          }
+        }
       }
       .SearchBarBtn {
         border: none;
