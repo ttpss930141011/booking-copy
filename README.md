@@ -3,3 +3,5 @@
 
 ## Day1
 ![day1](./public/daily-imgs/20230427.png)
+## Day2
+![day2](./public/daily-imgs/20230429.png)
