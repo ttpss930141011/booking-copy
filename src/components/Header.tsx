@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DateRange } from "react-date-range";
+
 const Header = () => {
   const [openCalendar, setOpenCalendar] = useState(false);
   const [dates, setDates] = useState([

@@ -1,0 +1,22 @@
+.postcard {
+  display: flex;
+  width: 100%;
+  .postcardItem {
+    display: flex;
+    padding: 5px;
+    flex: 1;
+    position: relative;
+    .itemInfo {
+      position: absolute;
+      top: 12px;
+      left: 22px;
+      color: white;
+      text-shadow: 2px 2px black;
+    }
+    .imgBg {
+      width: 100%;
+      border-radius: 2px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.feature{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    .featureContainer{
+        width: 100%;
+        max-width: 1024px;
+        .listTitle{
+            padding: 15px 10px;
+            .desc{
+                color: gray;
+            }
+        }
+        .listItems{
+            padding: 0px 10px;
+        }
+    }
+}

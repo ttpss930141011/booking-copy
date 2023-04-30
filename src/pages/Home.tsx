@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import "./home.scss";
 import Header from "../components/Header";
 import Announcement from "../components/Announcement";
+import Feature from "../components/Feature";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <NavBar />
       <Header />
       <Announcement />
+      <Feature/>
     </div>
   );
 };
