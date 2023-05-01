@@ -1,0 +1,49 @@
+.popularhotels {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  overflow-x: auto;
+  .popularhotelItem {
+    img {
+      display: flex;
+      width: 250px;
+      height: 230px;
+    }
+    .itemInfo {
+      .subtitle {
+        color: gray;
+        font-size: 12px;
+      }
+      .price {
+        color: black;
+        padding: 2px 0px;
+        font-weight: 500;
+      }
+      .rate {
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        span {
+          color: black;
+        }
+        p {
+          font-size: 12px;
+          color: gray;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 16px;
+          font-weight: 700;
+          height: 30px;
+          width: 30px;
+          border: none;
+          background-color: var(--primary-color);
+          border-radius: 5px 5px 5px 0px;
+        }
+      }
+    }
+  }
+}

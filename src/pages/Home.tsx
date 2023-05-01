@@ -4,6 +4,7 @@ import "./home.scss";
 import Header from "../components/Header";
 import Announcement from "../components/Announcement";
 import Feature from "../components/Feature";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Header />
       <Announcement />
       <Feature/>
+      <Footer/>
     </div>
   );
 };

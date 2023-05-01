@@ -8,6 +8,7 @@ import {
   CategoriesType,
   CategoriesCities,
 } from "../data/data";
+import PopularHotels from "../subcomponents/PopularHotels";
 
 const Feature = () => {
   return (
@@ -28,6 +29,9 @@ const Feature = () => {
         </div>
         <div className="listItem">
           <Categories data={CategoriesCities} />
+        </div>
+        <div className="listItem">
+          <PopularHotels data={PopularHotelsData} />
         </div>
       </div>
     </div>
