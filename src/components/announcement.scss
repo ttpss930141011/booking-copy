@@ -77,5 +77,43 @@
         }
       }
     }
+    .GlobalBanner{
+      display: flex;
+      // width: 100%;
+      align-items: center;
+      border-radius: 5px;
+      padding: 5px 20px;
+      border: 1px lightgray solid;
+      margin-top: 20px;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-image: url("https://cf.bstatic.com/static/img/genius-banner-world-bg/2b5cdbad7b92073bc396b8b59d0bb421b3a01cba.png");
+      img{
+        display: flex;
+        width: 180px;
+      }
+      .BannerInfoDes{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .Bannerbtn{
+          button{
+            padding: 8px 15px;
+            background-color: white;
+            border-radius: 2px;
+            color: rgb(53, 164, 127);
+            border: 1px rgb(53, 164, 127) solid;
+            &:hover {
+              background-color: rgba(53, 164, 127, 0.1);
+          }
+          }
+          button:last-child{
+            border: none;
+          }
+        }
+      }
+    }
+    
   }
 }
