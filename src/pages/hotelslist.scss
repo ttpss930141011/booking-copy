@@ -1,0 +1,91 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .listWrapper {
+        width: 100%;
+        display: flex;
+        max-width: 1024px;
+        gap: 20px;
+    }
+}
+.listSearch {
+    background-color: #ffc489;
+    padding: 5px;
+    border-radius: 2px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+    .searchTitle {
+        color: black;
+        background-color: #fd8915c6;
+        padding: 10px 10px;
+        border-radius: 1px;
+        font-size: 20px;
+    }
+}
+.listItem {
+    width: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    .searchInput {
+        border: none;
+        padding: 10px 5px; //並幫他們設定統一樣式
+        border-radius: 1px;
+    }
+    .dates {
+        //dates這邊是用div 來排版所以底色讓他跟input一樣都白色
+        background-color: #fff;
+        border: none;
+        border-radius: 2px;
+    }
+    .searchbtn {
+        padding: 10px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        background-color: rgb(53, 164, 127);
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(15, 130, 92);
+        }
+    }
+}
+
+.listItemLimitPrice {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    .searchInput {
+        border: 1px solid gray;
+    }
+}
+.listItmConditions {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 5px;
+}
+.listResult{
+    width: 100%;
+}
+.resultTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .map {
+        padding: 20px 25px;
+        background-color: #000;
+        border-radius: 2px;
+        background-image: url("https://cf.bstatic.com/psb/capla/static/media/map-entry-point.6b01012a.png");
+        button {
+            padding: 8px 15px;
+            border: none;
+            color: white;
+            background-color: var(--primary-color);
+        }
+    }
+}
