@@ -10,10 +10,10 @@
 ## Day4
 ![day4](./public/daily-imgs/20230501.png)
 ## Day5
-![day4](./public/daily-imgs/20230502.png)
+![day5](./public/daily-imgs/20230502.png)
 
 ## Day6
-![day4](./public/daily-imgs/20230511.png)
+![day6](./public/daily-imgs/20230511.png)
 
 ## Day7
-![day4](./public/daily-imgs/20230512.png)
+![day7](./public/daily-imgs/20230512.png)
