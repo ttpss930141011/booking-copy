@@ -17,3 +17,6 @@
 
 ## Day7
 ![day7](./public/daily-imgs/20230512.png)
+
+## Day8
+![day8](./public/daily-imgs/20230516.png)
